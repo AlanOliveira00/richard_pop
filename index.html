@@ -235,6 +235,32 @@
 
   <main class="w-full flex flex-col items-center relative overflow-x-hidden">
 
+    <!-- Floating Navigation Bar -->
+    <nav class="fixed bottom-6 lg:bottom-10 left-1/2 -translate-x-1/2 z-50 bg-black/60 backdrop-blur-xl border border-white/10 p-2 rounded-full flex items-center gap-1 sm:gap-2 shadow-[0_10px_40px_rgba(0,0,0,0.8)] gsap-nav transition-transform duration-300" style="transform: translateY(150px);">
+      <a href="#hero" class="p-3 sm:px-5 sm:py-2.5 rounded-full hover:bg-white/10 transition-colors text-white/60 hover:text-white group flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-500" title="Início">
+        <iconify-icon icon="solar:home-angle-bold-duotone" class="text-xl sm:text-lg"></iconify-icon>
+        <span class="hidden sm:block text-[0.65rem] font-bold tracking-widest uppercase">Início</span>
+      </a>
+      <div class="w-px h-6 bg-white/10 mx-1"></div>
+      <a href="#biography" class="p-3 sm:px-5 sm:py-2.5 rounded-full hover:bg-white/10 transition-colors text-white/60 hover:text-white group flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-500" title="A Lenda">
+        <iconify-icon icon="solar:star-circle-bold-duotone" class="text-xl sm:text-lg group-hover:text-rose-500 transition-colors"></iconify-icon>
+        <span class="hidden sm:block text-[0.65rem] font-bold tracking-widest uppercase">Lenda</span>
+      </a>
+      <a href="#discography" class="p-3 sm:px-5 sm:py-2.5 rounded-full hover:bg-white/10 transition-colors text-white/60 hover:text-white group flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-500" title="Trilhas Sonoras">
+        <iconify-icon icon="solar:vinyl-bold-duotone" class="text-xl sm:text-lg group-hover:text-rose-500 transition-colors"></iconify-icon>
+        <span class="hidden sm:block text-[0.65rem] font-bold tracking-widest uppercase">Hits</span>
+      </a>
+      <a href="#fans" class="p-3 sm:px-5 sm:py-2.5 rounded-full hover:bg-white/10 transition-colors text-white/60 hover:text-white group flex items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-500" title="Fã-Clube">
+        <iconify-icon icon="solar:users-group-two-rounded-bold-duotone" class="text-xl sm:text-lg group-hover:text-rose-500 transition-colors"></iconify-icon>
+        <span class="hidden sm:block text-[0.65rem] font-bold tracking-widest uppercase">Apóstolos</span>
+      </a>
+      <a href="#tour" class="p-3 sm:px-5 sm:py-2.5 rounded-full transition-colors text-rose-500/90 hover:text-rose-400 bg-rose-500/10 hover:bg-rose-500/20 group flex items-center gap-2 border border-rose-500/30 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-500" title="Turnê">
+        <iconify-icon icon="solar:ticket-bold-duotone" class="text-xl sm:text-lg drop-shadow-[0_0_8px_rgba(244,63,94,0.6)]"></iconify-icon>
+        <span class="hidden sm:block text-[0.65rem] font-bold tracking-widest uppercase drop-shadow-[0_0_8px_rgba(244,63,94,0.6)]">Turnê</span>
+      </a>
+    </nav>
+
+
     <!-- Hero Section -->
 
     <!-- Hero Section -->
@@ -288,7 +314,7 @@
           <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 md:gap-8 gsap-reveal gsap-hidden">
             <!-- CTA Button -->
             <a href="#tour"
-              class="inline-block w-full sm:w-auto px-10 py-5 rounded-sm text-xs tracking-widest uppercase transition-all duration-300 font-bold bg-rose-500 text-white border border-rose-500 hover:bg-transparent hover:text-rose-500 shadow-[0_0_30px_rgba(244,63,94,0.4)] hover:shadow-[0_0_40px_rgba(244,63,94,0.6)] group relative overflow-hidden">
+              class="inline-block w-full sm:w-auto px-10 py-5 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-rose-500/50 rounded-sm text-xs tracking-widest uppercase transition-all duration-300 font-bold bg-rose-500 text-white border border-rose-500 hover:bg-transparent hover:text-rose-500 shadow-[0_0_30px_rgba(244,63,94,0.4)] hover:shadow-[0_0_40px_rgba(244,63,94,0.6)] group relative overflow-hidden">
               <span class="relative z-10 flex items-center justify-center gap-3">
                 Agendar Minha Turnê
                 <iconify-icon class="transform group-hover:translate-x-2 transition-transform text-xl"
@@ -300,7 +326,7 @@
             </a>
 
             <a href="#discography"
-              class="flex items-center space-x-4 text-xs tracking-widest uppercase cursor-pointer group">
+              class="flex items-center space-x-4 text-xs tracking-widest focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-500 rounded-full pr-4 uppercase cursor-pointer group">
               <div
                 class="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center group-hover:border-rose-500 group-hover:bg-rose-500/10 transition-all shadow-[0_0_20px_rgba(0,0,0,0.8)] group-hover:shadow-[0_0_20px_rgba(244,63,94,0.4)]">
                 <iconify-icon class="text-white group-hover:text-rose-500 transition-colors text-2xl"
@@ -407,7 +433,7 @@
       </div>
 
       <!-- Row 1: Text and Image -->
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 w-full relative z-10 mb-24">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 w-full relative z-10 mb-16 md:mb-24">
 
         <!-- Text Content -->
         <div class="col-span-12 md:col-span-6 flex flex-col justify-center">
@@ -545,10 +571,10 @@
 
             <div class="flex flex-col items-center justify-center relative z-10 mb-8 mt-4">
               <div
-                class="w-48 h-48 rounded-full vinyl-disc relative flex items-center justify-center animate-[spin_4s_linear_infinite] shadow-xl group-hover:shadow-[0_0_40px_rgba(244,63,94,0.4)] transition-shadow duration-500">
+                class="w-32 h-32 md:w-48 md:h-48 rounded-full vinyl-disc relative flex items-center justify-center animate-[spin_4s_linear_infinite] shadow-xl group-hover:shadow-[0_0_40px_rgba(244,63,94,0.4)] transition-shadow duration-500">
                 <div class="absolute inset-0 rounded-full vinyl-grooves pointer-events-none"></div>
                 <div
-                  class="w-16 h-16 bg-[#030303] rounded-full border border-white/10 flex items-center justify-center relative z-10 overflow-hidden">
+                  class="w-10 h-10 md:w-16 md:h-16 bg-[#030303] rounded-full border border-white/10 flex items-center justify-center relative z-10 overflow-hidden">
                   <div class="absolute inset-0 bg-rose-500/20 blur-md"></div>
                   <div class="w-2 h-2 bg-white/40 rounded-full z-10"></div>
                 </div>
@@ -560,12 +586,12 @@
               <p class="text-xs tracking-widest uppercase text-rose-500/80 mb-8">Um Grande Amor • 2021</p>
 
               <div class="flex items-center justify-center gap-6">
-                <button class="text-white/40 hover:text-white transition-colors"><iconify-icon
+                <button class="text-white/40 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-500 rounded-full p-1"><iconify-icon
                     icon="solar:skip-previous-bold" class="text-3xl"></iconify-icon></button>
                 <button
                   class="w-16 h-16 bg-rose-500 rounded-full flex items-center justify-center text-white shadow-[0_0_20px_rgba(244,63,94,0.4)] hover:scale-110 transition-transform"><iconify-icon
                     icon="solar:pause-bold" class="text-3xl"></iconify-icon></button>
-                <button class="text-white/40 hover:text-white transition-colors"><iconify-icon
+                <button class="text-white/40 hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose-500 rounded-full p-1"><iconify-icon
                     icon="solar:skip-next-bold" class="text-3xl"></iconify-icon></button>
               </div>
             </div>
@@ -581,7 +607,7 @@
             </div>
 
             <!-- Custom scroll area -->
-            <div class="overflow-y-auto tracklist-scroll pr-2 space-y-1" style="height: 600px;">
+            <div class="overflow-y-auto tracklist-scroll pr-2 space-y-1 h-[400px] lg:h-[600px] overscroll-contain">
 
               <div
                 class="flex items-center justify-between p-3 rounded-sm hover:bg-white/[0.03] group cursor-pointer transition-colors border border-transparent hover:border-white/5">
@@ -1060,7 +1086,7 @@
         <div class="w-12 h-px bg-rose-500/50"></div>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-16 items-center">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 lg:gap-16 items-center">
 
         <!-- Image Container -->
         <div class="col-span-12 md:col-span-6 relative gsap-fans-reveal opacity-0" style="transform: translateY(40px);">
@@ -1170,7 +1196,7 @@
             class="absolute inset-0 bg-gradient-to-r from-rose-500/0 via-rose-500/5 to-transparent -translate-x-full group-hover:translate-x-0 transition-transform duration-700 pointer-events-none">
           </div>
 
-          <div class="flex items-center gap-8 md:w-1/3 mb-4 md:mb-0 relative z-10">
+          <div class="flex items-center gap-4 md:gap-8 md:w-1/3 mb-4 md:mb-0 relative z-10">
             <div class="text-left">
               <p class="text-3xl font-light text-white group-hover:text-rose-500 transition-colors">15</p>
               <p class="text-[0.6rem] tracking-widest uppercase text-white/40">Out</p>
@@ -1204,7 +1230,7 @@
             class="absolute inset-0 bg-gradient-to-r from-rose-500/0 via-rose-500/5 to-transparent -translate-x-full group-hover:translate-x-0 transition-transform duration-700 pointer-events-none">
           </div>
 
-          <div class="flex items-center gap-8 md:w-1/3 mb-4 md:mb-0 relative z-10">
+          <div class="flex items-center gap-4 md:gap-8 md:w-1/3 mb-4 md:mb-0 relative z-10">
             <div class="text-left">
               <p class="text-3xl font-light text-white group-hover:text-rose-500 transition-colors">22</p>
               <p class="text-[0.6rem] tracking-widest uppercase text-white/40">Out</p>
@@ -1238,7 +1264,7 @@
             class="absolute inset-0 bg-gradient-to-r from-rose-500/0 via-rose-500/10 to-transparent -translate-x-full group-hover:translate-x-0 transition-transform duration-700 pointer-events-none">
           </div>
 
-          <div class="flex items-center gap-8 md:w-1/3 mb-4 md:mb-0 relative z-10">
+          <div class="flex items-center gap-4 md:gap-8 md:w-1/3 mb-4 md:mb-0 relative z-10">
             <div class="text-left">
               <p class="text-3xl font-light text-white group-hover:text-rose-500 transition-colors">Hoje</p>
               <p class="text-[0.6rem] tracking-widest uppercase text-rose-500">Agora</p>
@@ -1402,6 +1428,14 @@
           duration: 1.8,
           ease: "elastic.out(1, 0.75)"
         }, "-=1.2");
+
+      
+      // Show Navbar on Scroll
+      ScrollTrigger.create({
+        start: "top -300",
+        onEnter: () => gsap.to(".gsap-nav", { y: 0, duration: 0.5, ease: "power3.out" }),
+        onLeaveBack: () => gsap.to(".gsap-nav", { y: 150, duration: 0.5, ease: "power3.in" })
+      });
 
       // Biography Scroll Animations
       gsap.to(".gsap-bio-reveal", {
